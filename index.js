@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-var client = redis.createClient();
+var client = redis.createClient(process.env.REDIS_URL);
 
 
 
