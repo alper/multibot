@@ -75,7 +75,7 @@ function processResult(r) {
   });
 }
 
-var BASE_URL = "https://api.telegram.org/bot158772788:AAGZmSbkELKu1r6C6bZBhszCAzIbJ0VWUGs/";
+var BASE_URL = "https://api.telegram.org/bot" + process.env.TELEGRAM_TOKEN + "/";
 var POLLING_URL = BASE_URL + "getUpdates?offset=:offset:&timeout=60";
 var SEND_MESSAGE_URL = BASE_URL + "sendMessage";
 var offset = 0;
